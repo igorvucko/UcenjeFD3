@@ -1,0 +1,36 @@
+body{
+    background-color: antiqueWhite;
+}
+
+h1 {
+    color: #ff00ff;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h2 {
+    color: blue;
+}
+
+.naslov {
+    color: green;
+}
+
+div p {
+    color: aqua;
+    text-align: center;
+}
+
+#sadrzaj {
+    color: red;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: '😅';
+}
