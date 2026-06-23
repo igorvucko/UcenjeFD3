@@ -1,0 +1,63 @@
+body{
+
+background-color: antiqueWhite;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+ul li {
+    
+    padding: 3rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: yellowgreen;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+ul li a:hover{
+    color: black;
+}
+
+li.active{
+    background-color: antqueWhite;
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+    "a a b b  "
+    ". c c b"
+    "d d d d"
+    ;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+ 
+.a {
+    grid-area: a;
+}
+.b {
+    grid-area: b;
+}
+.c {
+    grid-area: c;
+}
+.d {
+    grid-area: d;
+}
+.e {
+    grid-area: e;
+}
+div {
+    background-color: lightblue;
+    border-radius: 2rem;
+    font-size: 4rem;
+    padding: 2rem;
+    border: 4px solid red;
+}
