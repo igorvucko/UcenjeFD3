@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1a1a2e;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Navigacija - crna */
+.navigacija {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #000000;
+    border-bottom: 1px solid #333;
+}
+
+.navigacija h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.linkovi a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Hero - tamno plava */
+.hero {
+    background: #16213e;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #e67e22;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: #8899aa;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.gumb {
+    display: inline-block;
+    background: #e67e22;
+    color: white;
+    padding: 0.6rem 2rem;
+    border: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Što nudimo */
+.nudimo {
+    background: #1a1a2e;
+    padding: 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.nudimo h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.kartice {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.kartica {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.kartica h3 {
+    color: #e67e22;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.kartica p {
+    color: #8899aa;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.kartica a {
+    color: #e67e22;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+/* Paketi */
+.paketi {
+    background: #1a1a2e;
+    padding: 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.paketi h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th {
+    background: #e67e22;
+    color: white;
+    padding: 0.6rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 0.6rem;
+    color: #ccc;
+    border-bottom: 1px solid #333;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+/* 25 MIN - narančasta */
+.min {
+    background: #e67e22;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.min h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.min h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.min h4 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* Kontakt */
+.kontakt {
+    background: #1a1a2e;
+    padding: 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.kontakt h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+.info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info p {
+    color: #8899aa;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.info p strong {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background: #000000;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer p {
+    color: #e67e22;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .navigacija {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    .kartica {
+        min-width: 100%;
+    }
+    
+    .min h2 {
+        font-size: 2rem;
+    }
+    
+    .min h3 {
+        font-size: 1.8rem;
+    }
+    
+    .min h4 {
+        font-size: 1.3rem;
+    }
+    
+    table {
+        font-size: 0.8rem;
+    }
+    
+    th, td {
+        padding: 0.4rem;
+    }
+}
