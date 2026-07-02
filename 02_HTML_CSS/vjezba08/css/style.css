@@ -1,0 +1,17 @@
+body {
+    background-color:  antiquewhite;
+    background-image: url('../img/pozadina.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+@font-face {
+    font-family: 'Edunova';
+    src: url('../fonts/Satoshi-Bold.ttf') format('true-type');
+}
+
+h1{
+
+    font-family: 'Edunova', 'Arial', sans-serif;
+}
