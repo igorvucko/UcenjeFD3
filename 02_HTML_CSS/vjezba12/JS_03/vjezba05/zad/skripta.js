@@ -23,5 +23,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
     }
 
     rezultat.innerHTML =  a>=b ? a:b ;
+    rezultat.style.color = 'green';
     }}
+// pocetak 2. zadatka 
 });
