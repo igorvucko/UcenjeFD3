@@ -74,7 +74,7 @@ console.log(`Prvi: ${niz[0]}, Zadnji: ${niz[niz.length - 1]}`);
           niz.push("X");
         } else {
           niz.unshift("Y");
-        }
+        } 
       })
       console.log("ZADATAK 4 — Dodavanje elementa prema duljini")
       
