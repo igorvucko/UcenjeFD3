@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/aboreto-v2-latin-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Glavni container - slika + counter */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+
+/* OKVIR ZA SLIKU */
+.slika {
+    width: 450px;
+    height: 570px;
+
+    overflow: hidden;
+
+    border: 4px solid black;
+}
+
+/* Sama slika */
+.slika img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+/* Vue aplikacija */
+#app {
+    width: 470px;
+    padding: 55px 40px;
+
+    text-align: center;
+
+    background-color: white;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+#app p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#app h1 {
+    font-size: 70px;
+    color: #333;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+
+    padding: 12px 20px;
+    margin: 5px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:first-of-type {
+    background-color: #4f46e5;
+    color: white;
+}
+
+button:last-of-type {
+    background-color: #e5e7eb;
+    color: #333;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#app div {
+    margin-top: 20px;
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background-color: #fee2e2;
+    color: #dc2626;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* MOBITEL */
+@media (max-width: 1000px) {
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .slika {
+        width: 90vw;
+        height: 500px;
+    }
+
+    #app {
+        width: 90vw;
+    }
+}

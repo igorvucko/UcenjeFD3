@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Counter</title>
+
+    <link rel="stylesheet" href="./style.css">   
+</head>
+
+<body>
+
+    <main class="counter" x-data="{ broj: 0 }">
+
+        <div class="counter-header">
+            <span class="counter-icon">+</span>
+
+            <div>
+                <h1>Counter</h1>
+                
+            </div>
+        </div>
+
+        <div class="display">
+            <span x-text="broj"></span>
+        </div>
+
+        <div class="controls">
+
+            <button
+                class="control-button"
+                @click="broj = Math.max(0, broj - 1)">
+                −
+            </button>
+
+            <button
+                class="control-button"
+                @click="broj++"
+                aria-label="Povećaj">
+                +
+            </button>
+
+        </div>
+
+    
+    </main>
+
+    <script defer src="./alpine.min.js"></script>
+
+</body>
+
+</html>

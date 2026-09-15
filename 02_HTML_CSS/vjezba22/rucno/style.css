@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background: #eef1f5;
+
+    color: #111827;
+}
+
+.counter {
+    width: 380px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+
+/* HEADER */
+
+.counter-header {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 28px;
+}
+
+.counter-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.counter-header h1 {
+    font-size: 20px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+.counter-header p {
+    margin-top: 3px;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+}
+
+
+/* NUMBER */
+
+.display {
+    height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background: #f8fafc;
+
+    border: 1px solid #eef0f3;
+
+    border-radius: 18px;
+}
+
+.display span {
+    font-size: 88px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -4px;
+
+    color: #111827;
+}
+
+
+/* BUTTONS */
+
+.controls {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+.control-button {
+    height: 58px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 28px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.control-button:hover {
+    background: #1f2937;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(17, 24, 39, 0.18);
+}
+
+.control-button:active {
+    transform: translateY(0);
+
+    box-shadow: none;
+}
+
+
+/* RESET */
+
+.reset {
+    width: 100%;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: transparent;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background 0.15s ease,
+        color 0.15s ease;
+}
+
+.reset:hover {
+    background: #f3f4f6;
+
+    color: #374151;
+}
